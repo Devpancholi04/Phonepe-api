@@ -80,9 +80,7 @@ def payment(transaction_id, user_id,amount, customer_no, callbackUrl):
                 #print('\n',get_url)
                 redirect = get_url['data']['instrumentResponse']['redirectInfo']['url']
                 print(f"redirect_url = {redirect}")
-                a = webbrowser.open(redirect)
-                callback_respond = requests.get(a)
-                print(callback_respond)
+                webbrowser.open(redirect)
                 break
             else:
                 print(f"error : {respond.status_code}")
