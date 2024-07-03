@@ -36,8 +36,8 @@ def payment(transaction_id, user_id,amount, customer_no, callbackUrl):
         "merchantTransactionId": transaction_id,
         "merchantUserId": user_id,
         "amount": amount,
-        #"redirectUrl": "http://annc.com",
-        "redirectUrl": "http://127.0.0.1:5500/redirect.html",
+        "redirectUrl": "http://annc.com",
+        #"redirectUrl": "http://127.0.0.1:5500/redirect.html",
         "redirectMode": "REDIRECT",
         "callbackUrl": callbackUrl,
         "mobileNumber": customer_no,
@@ -98,8 +98,8 @@ if __name__ == "__main__":
     user_id = "USER12389745698756231478956"
     amount = 10000
     customer_no = '8120098465'
-    #callbackUrl = 'http://annc.com'
-    callbackUrl = 'http://127.0.0.1:5500/redirect.html'
+    callbackUrl = 'http://annc.com'
+    #callbackUrl = 'http://127.0.0.1:5500/redirect.html'
     
     try:
         payment(merchantTransactionId, user_id, amount, customer_no, callbackUrl)
